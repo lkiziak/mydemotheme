@@ -3,9 +3,10 @@
  error_reporting(E_ERROR);
 ?>
 
+<h1>Pacific Health</h1>
+
 <?php get_header(); ?>
 
-<h1>Health Blog</h1>
 <hr>
 
 <!-- Post Loop -->
@@ -20,7 +21,7 @@
   <?php endif; ?>
 
 <?php get_footer(); ?>
-<?php get_sidebar();?>
+
 
 
 

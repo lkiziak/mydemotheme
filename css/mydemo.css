@@ -1,13 +1,21 @@
 html,
 body {
   margin: 0;
-  color: #333;
+  color: #335;
   background: #eee;
   font: sans-serif;
 }
 
 body {
   padding: 20px;
+}
+
+h1 {
+  font-size: 300%;
+  margin: 0 auto;
+  color: blue;
+  font: sans-serif;
+  text-align: center;
 }
 
 #container {
@@ -20,16 +28,12 @@ body {
 footer {
   width: 800px;
   margin: 0 auto;
-  background: #000;
-  color: #fff;
+  background: #779;
+  color: yellow;
   padding: 20px;
 }
 
-#sidebar {
-  border: 1px solid red;
-  float: right;
-  width: 200px;
-}
+
 
 
 

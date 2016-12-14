@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>A Little About Me</h1>
+<h1>About Me</h1>
 
 <!-- Post Loop -->
   <?php if( have_posts() ) : ?>
@@ -8,7 +8,7 @@
 
         <!-- do stuff ... -->
         <?php the_title(); ?>
-          <h3><?php the_title(); ?></h3>
+          <h6><?php the_title(); ?></h6>
           <p><?php the_content(); ?></p>
           <hr>
       <?php endwhile; ?>

@@ -7,12 +7,20 @@
 
 function demo_script() {
 
-    // WP Enqueue style and script
-    wp_enqueue_style( 'mydemo-css', get_template_directory_uri() . '/layout/css/mydemo.min.css', array(), 'all' );
-    wp_enqueue_script( 'mydemo-scripts', get_template_directory_uri() . '/layout/js/mydemo.js', array(), 'all');
+    // WP Enqueue style
+    wp_enqueue_style( 'mydemo-css', get_template_directory_uri() . '/css/mydemo.css', array(), 'all' );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+
+
+    // WP Enqueue script
+    wp_enqueue_script( 'jquery');
+    wp_enqueue_script( 'mydemo-scripts', get_template_directory_uri() . '/js/mydemo.js', array(), 'all');
+    // wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'demo_script_enqueue');
+
+  // active menus
 
 function good_theme_setup() {
 
@@ -25,9 +33,12 @@ function good_theme_setup() {
 
 add_action('init', 'good_theme_setup');
 
-// Theme support hooks
+// Theme support functions
 add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('post-formats', array('aside', 'image', 'video'));
+
+
+add_action( 'wp_enqueue_scripts', 'demo_script' );
 

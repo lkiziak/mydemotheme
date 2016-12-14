@@ -10,7 +10,6 @@
 </head>
 
 <div id="container">
-
   <?php
     if( is_home() ):
         $demo_classes = array( 'demo-class', 'my-class' );
