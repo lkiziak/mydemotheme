@@ -1,8 +1,3 @@
-<?php
- ini_set('display_errors', '1');
- error_reporting(E_ERROR);
-?>
-
 <h1>Pacific Health</h1>
 
 <?php get_header(); ?>
