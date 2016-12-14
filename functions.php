@@ -6,7 +6,6 @@
  */
 
 function demo_script() {
-
     // WP Enqueue style
       wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
       wp_enqueue_style( 'mydemo-css', get_template_directory_uri() . '/css/mydemo.css', array(), 'all' );
@@ -20,7 +19,6 @@ function demo_script() {
 add_action( 'wp_enqueue_scripts', 'demo_script_enqueue');
 
   // active menus
-
 function good_theme_setup() {
 
     add_theme_support('menus');
