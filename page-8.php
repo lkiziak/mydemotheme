@@ -1,3 +1,4 @@
+<!-- About Me page -->
 <?php get_header(); ?>
 
 <h1>About Me</h1>

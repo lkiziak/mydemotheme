@@ -3,7 +3,6 @@
 <?php get_header(); ?>
 
 <hr>
-
 <!-- Post Loop -->
   <?php if( have_posts() ) : ?>
       <?php while( have_posts() ) : the_post(); ?>
@@ -14,6 +13,7 @@
 
       <?php endwhile; ?>
   <?php endif; ?>
+
 
 <?php get_footer(); ?>
 
